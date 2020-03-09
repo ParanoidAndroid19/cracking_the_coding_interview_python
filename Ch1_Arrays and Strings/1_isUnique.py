@@ -32,10 +32,12 @@ def isUnique(str1):
 
     for c in str1:
         val = ord(c) # eg: ord('a') = 97
-
+        
+        # For the char in string, its val (index in char_set) is set as True in the char_set
         if char_set[val] == True:
             return "Not Unique"
-
+        
+        # Here we set the value as True for chars present in the string
         char_set[val] = True
 
     return "Unique"
